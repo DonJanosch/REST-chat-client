@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>512</x>
+      <y>240</y>
+      <w>160</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Einkaufsliste erstellen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>208</x>
+      <y>232</y>
+      <w>152</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Rezepte recherchieren</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>280</x>
+      <y>392</y>
+      <w>160</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Rezepte angeboten 
+bekommen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>320</y>
+      <w>128</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>280</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>808</x>
+      <y>240</y>
+      <w>160</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Kosten kalkulieren</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>280</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>536</x>
+      <y>488</y>
+      <w>160</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Historie vergangener 
+Einkäufe und Gerichte</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>344</y>
+      <w>56</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>50.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
