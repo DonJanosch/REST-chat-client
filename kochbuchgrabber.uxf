@@ -4,7 +4,7 @@
     <id>UMLUseCase</id>
     <coordinates>
       <x>512</x>
-      <y>240</y>
+      <y>8</y>
       <w>160</w>
       <h>112</h>
     </coordinates>
@@ -15,7 +15,7 @@
     <id>UMLUseCase</id>
     <coordinates>
       <x>208</x>
-      <y>232</y>
+      <y>0</y>
       <w>152</w>
       <h>104</h>
     </coordinates>
@@ -26,7 +26,7 @@
     <id>UMLUseCase</id>
     <coordinates>
       <x>280</x>
-      <y>392</y>
+      <y>160</y>
       <w>160</w>
       <h>104</h>
     </coordinates>
@@ -38,7 +38,7 @@ bekommen</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>408</x>
-      <y>320</y>
+      <y>88</y>
       <w>128</w>
       <h>96</h>
     </coordinates>
@@ -49,7 +49,7 @@ bekommen</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>360</x>
-      <y>280</y>
+      <y>48</y>
       <w>168</w>
       <h>32</h>
     </coordinates>
@@ -60,7 +60,7 @@ bekommen</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>808</x>
-      <y>240</y>
+      <y>8</y>
       <w>160</w>
       <h>112</h>
     </coordinates>
@@ -71,7 +71,7 @@ bekommen</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>656</x>
-      <y>280</y>
+      <y>48</y>
       <w>168</w>
       <h>32</h>
     </coordinates>
@@ -82,7 +82,7 @@ bekommen</panel_attributes>
     <id>UMLUseCase</id>
     <coordinates>
       <x>536</x>
-      <y>488</y>
+      <y>256</y>
       <w>160</w>
       <h>112</h>
     </coordinates>
@@ -94,11 +94,64 @@ Einkäufe und Gerichte</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>576</x>
-      <y>344</y>
+      <y>112</y>
       <w>56</w>
       <h>160</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>50.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>152</x>
+      <y>464</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Itemlist
+--
++id: INT
+-createdAt: INT
+-Items: List&lt;Item&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>464</y>
+      <w>296</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Item
+--
+id: INT
+name: STR
+price: double
+--
++Item(name:string, price: double, kind:quantifier, value:double)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>400</y>
+      <w>96</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+quantifier
+--
+weight
+volume
+piece
+
+
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
