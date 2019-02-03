@@ -6,23 +6,23 @@
     <coordinates>
       <x>770</x>
       <y>670</y>
-      <w>320</w>
+      <w>530</w>
       <h>210</h>
     </coordinates>
     <panel_attributes>Item
 --
--description
--id: INT
--name: STR
--price: double
--value:int
+-description : string
+-id : INT
+-name : STR
+-price : double
+-amount : int
 --
 +Description : string {get; set}
 +Equals(other : object)
-+Item(name:string, price: double, value:int)
++Item(name:string, price: double, quantifier : Quantifier, value:int)
 +Name {get; private set}
 +Price : int {get; set;}
-+Value : int {get; set;}
++Amount : int {get; set;}
 
 
 </panel_attributes>
@@ -54,11 +54,10 @@
       <w>180</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Singleton&gt;&gt;
-IdCalculator
+    <panel_attributes>_IdCalculator_
 --
 _+Instance: IdCalculator_
-ids : List&lt;int&gt;
+-idcounter : int = 0
 --
 +GetId():int
 
