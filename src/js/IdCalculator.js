@@ -1,11 +1,13 @@
-class IdCalculator{
-  this.counter = 0;
-  static getId(){
-    this.counter += 1;
-    return this.counter;
+function IdCalculator(){
+  IdCalculator.a = 1;
+  if( typeof IdCalculator.counter == 'undefined'){
+    IdCalculator.counter = 0;
   }
 }
 
-// var idCalculator = new IdCalculator();
+IdCalculator.getId = function (){
+  IdCalculator.counter += 1;
+  return IdCalculator.counter;
+}
 
 module.exports = {IdCalculator}

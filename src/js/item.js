@@ -2,11 +2,13 @@ var {IdCalculator} = require('./IdCalculator');
 
 var idCalculator = new IdCalculator();
 
+console.log('A sollte 1 sein: ',idCalculator.a);
+
 function Item() {
   if (!(this instanceof Item)){
     return new Item();
   }
-  var id = 0; // TODO: ID-Generator schreiben
+  var id = idCalculator.getId(); // TODO: ID-Generator schreiben
   var description = '';
   var name = '';
   var price = 0;
