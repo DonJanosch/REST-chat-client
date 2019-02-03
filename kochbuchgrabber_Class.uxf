@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>670</y>
+      <w>320</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Item
+--
+-description
+-id: INT
+-name: STR
+-price: double
+-value:int
+--
++Description : string {get; set}
++Equals(other : object)
++Item(name:string, price: double, value:int)
++Name {get; private set}
++Price : int {get; set;}
++Value : int {get; set;}
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>480</y>
+      <w>230</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Receipe
+--
+-description
+-createdAt: INT
+-Items: List&lt;Item&gt; {get;set}
++Receipe(receipe : Receipe)
++AddItem(item : Item)
++name: string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>520</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Singleton&gt;&gt;
+IdCalculator
+--
+_+Instance: IdCalculator_
+ids : List&lt;int&gt;
+--
++GetId():int
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1040</x>
+      <y>620</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>600</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>760</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Quantifier
+--
++Piece
++Volume
++Weight
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>800</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>260</y>
+      <w>380</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+IReceipeGrabber
+-
++FindReceipe(searchItem : string) : List&lt;Receipe&gt;
++Name : string {get; set}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>140</y>
+      <w>360</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Controller
+-
+-receipes : List&lt;Receipe&gt;
+-grabbers : List&lt;IReceipeGrabber&gt;
+-cartList : List&lt;Cart&gt;
+-
++AddToCart(receipe : Receipe)
++AddRessource(ressource : IReceipeGrabber)
++CreateCart(name : string)
++CreateCart(name : string, items : List&lt;Item&gt;)
++DeleteCart(name : string)
++GetCartList : List&lt;Receipe&gt; {readonly}
++GetReceipeList : List&lt;Receipe&gt; {readonly}
++SelectGrabber(name : string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>390</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Cart
+--
++Cart(cart : Cart)
++RemovedItem(item: Item)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>850</x>
+      <y>450</y>
+      <w>30</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>350</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>330</y>
+      <w>190</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>290</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>380</y>
+      <w>370</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>WebGrabber
+-
+-hostUrl : string
+-name : string
+-url : string
+-searchItem : string
+-receipes : List&lt;Receipe&gt;
+-
++ReceipeGrabber(url : string, searchItem : string)
++FindReceipe(searchItem : string) : List&lt;Receipe&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>70</y>
+      <w>380</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>DataBaseGrabber
+-
+-hostUri : string
+-name : string
+-receipes : List&lt;Receipe&gt;
+-uri : string
+-searchItem : string
+-
++ReceipeGrabber(url : string, searchItem : string)
++FindReceipe(searchItem : string) : List&lt;Receipe&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>330</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>220</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
